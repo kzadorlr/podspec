@@ -8,9 +8,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/kzadorlr/iproocFork.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'iProov/Classes/**/*'
-  s.resources = ['iProov/Assets/**/*']
-
+  
+  s.ios.vendored_frameworks = 'iProov.framework'
   s.dependency 'KeychainAccess', '~> 3.1.0'
   s.dependency 'GPUImage', '~> 0.1'
   s.dependency 'GZIP', '~> 1.1'
